@@ -1,0 +1,189 @@
+@import url(settings.scss);
+
+/************************************************************************************INDEX.HTML******************************************************************************/
+
+/*Para el menu de navegacion*/
+.header__nav__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+}
+
+.header__nav__list a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.header__nav__list a:hover {
+  background: rgb(255, 230, 0);
+}
+
+@media all and (max-width: 800px) {
+  .menu-principal {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu-principal {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .menu-principal a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .menu-principal li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/*Termina menu navegacion*/
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+//Texto de bienvenida
+.bienvenida {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+//Divide la pagina principal en dos columnas
+.division {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+//Columna uno, imagen izquierda
+#imagen-saludo {
+  height: 425px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Pie de pagina
+.footer {
+  background: deepskyblue;
+  margin: 0;
+  padding: 0.5px;
+}
+
+.footer h4 {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+//Contenedor del contenedor del formulario
+.card {
+  background: #a1efff;
+  margin: 50px;
+}
+
+//Contenedor del formulario
+.card-form-table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+//Columnas de tabla del formulario
+.table-column {
+  width: 50%;
+}
+
+//Columna unica para la fila del id dentro del formulario
+.table-column-id {
+  width: 100%;
+}
+
+//Fila de la tabla del formulario
+.table-row {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+//Contenedor de botones
+.container-boton {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+//Boton de insertar
+.boton-insert {
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+//Boton de editar
+.boton-edit {
+  background-color: #ff9231;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+//Boton de eliminar
+.boton-danger {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+/************************************************************************************PERSONAS.HTML******************************************************************************/
+
+//Contenedor de lista de personas
+#personas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+}
+
+//Boton de mostrar lista de personas
+.mostrarPersonas {
+  background: tomato;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+//Elemento de la lista de personas (Datos persona)
+.persona {
+  background-color: grey;
+  margin-right: 10px;
+}
+
+//Imagen celebrando que el resultado es correcto
+#imagen_yes {
+  margin-top: 10px;
+  text-align: center;
+}

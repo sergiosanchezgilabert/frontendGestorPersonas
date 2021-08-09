@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Sergio Sanchez">
+    <meta name="copyright" content="">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1744/1744273.png">
+    <link rel="stylesheet" href="../component.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__item"><a href="index.html">Home</a></li>
+                <li class="header__nav__item"><a href="personas.html">Personas</a></li>
+                <li class="header__nav__item"><a href="personas.html">Estudiantes</a></li>
+                <li class="header__nav__item"><a href="personas.html">Profesores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="negrita" id="welcome">
+        <h1 class="bienvenida"> Welcome</h1>
+    </div>
+
+    <div class="division">
+        <div id="imagen">
+            <img id="imagen-saludo" src="https://media.giphy.com/media/G3Hu8RMcnHZA2JK6x1/giphy.gif"
+                alt="perro-saludando">
+        </div>
+        <div class="card">
+            <form method="" class="card-form" action="">
+                <table class="card-form-table">
+                    <tr class="table-row">
+                        <td class="table-column-id">
+                            <p id="id_persona">ID: </p>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-column">
+                            <label for="user">User:</label><br>
+                            <input type="name" name="user" required="" id="user"><br>
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="password" required="" id="password"><br>
+                            <label for="surname">Surname:</label><br>
+                            <input type="name" name="surname" required="" id="surname"><br>
+                            <label for="company_email">Email Empresa:</label><br>
+                            <input type="email" name="company_email" id="company_email"><br>
+                            <label for="personal_email">Email Personal:</label><br>
+                            <input type="email" name="personal_email" id="personal_email"><br>
+
+                        </td>
+                        <td class="table-column">
+                            <label for="city">Ciudad:</label><br>
+                            <input type="text" name="city" required="" id="city"><br>
+                            <label for="active">Activo:</label>
+                            <input type="checkbox" name="active" id="active"><br>
+                            <label for="create_date">Fecha de creación:</label><br>
+                            <input type="datetime" name="create_date" required="" id="create_date"><br>
+                            <label for="imagen_url">URL de imagen:</label><br>
+                            <input type="text" name="imagen_url" id="imagen_url"><br>
+                            <label for="termination_date">Fecha de terminación:</label><br>
+                            <input type="datetime" name="termination_date" id="termination_date"><br>
+                        </td>
+                    </tr>
+                </table>
+                <div class="container-boton">
+                    <button class="" type="button" onclick="limpiar()">Limpiar </button>
+                </div>
+                <div class="container-boton">
+                    <button class="boton-insert" type="button" onclick="insertarPersona()">Insertar </button>
+                    <button class="boton-edit" type="button" onclick="updatePer()">Editar </button>
+                    <button class="boton-danger" type="button" onclick="deletePer()">Eliminar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../javascript/operaciones.js"></script>
+
+</body>
+<footer class="footer">
+    <h4>Sergio Sánchez ® Copyright 2021</h4>
+</footer>
+
+</html>

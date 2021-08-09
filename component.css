@@ -1,0 +1,196 @@
+@import url(settings.scss);
+/************************************************************************************INDEX.HTML******************************************************************************/
+/*Para el menu de navegacion*/
+.header__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+}
+
+.header__nav__list a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.header__nav__list a:hover {
+  background: #ffe600;
+}
+
+@media all and (max-width: 800px) {
+  .menu-principal {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu-principal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding: 0;
+  }
+  .menu-principal a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .menu-principal li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/*Termina menu navegacion*/
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bienvenida {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#imagen-saludo {
+  height: 425px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background: deepskyblue;
+  margin: 0;
+  padding: 0.5px;
+}
+
+.footer h4 {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: #a1efff;
+  margin: 50px;
+}
+
+.card-form-table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+.table-column {
+  width: 50%;
+}
+
+.table-column-id {
+  width: 100%;
+}
+
+.table-row {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-boton {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.boton-insert {
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.boton-edit {
+  background-color: #ff9231;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.boton-danger {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+/************************************************************************************PERSONAS.HTML******************************************************************************/
+#personas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.mostrarPersonas {
+  background: tomato;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.persona {
+  background-color: grey;
+  margin-right: 10px;
+}
+
+#imagen_yes {
+  margin-top: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=component.css.map */
